@@ -1,7 +1,11 @@
 import { Product } from "@/types/product";
 
+/**
+ * Hardcoded products for frontend display.
+ * 10 products per category with relevant dummy images (Unsplash).
+ */
 export const products: Product[] = [
-  // Makeup Products
+  // Makeup – 10 products
   {
     id: "m1",
     name: "Matte Foundation - Natural Beige",
@@ -44,7 +48,7 @@ export const products: Product[] = [
     category: "makeup",
     type: "foundation",
     price: 3200,
-    image: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=400&fit=crop",
     description: "High coverage foundation for special occasions",
   },
   {
@@ -53,7 +57,7 @@ export const products: Product[] = [
     category: "makeup",
     type: "base",
     price: 2000,
-    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop",
     description: "Moisturizing BB cream with SPF protection",
   },
   {
@@ -62,7 +66,7 @@ export const products: Product[] = [
     category: "makeup",
     type: "face-powder",
     price: 1400,
-    image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop",
     description: "Portable powder compact for touch-ups",
   },
   {
@@ -71,10 +75,28 @@ export const products: Product[] = [
     category: "makeup",
     type: "blush",
     price: 1600,
-    image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400&h=400&fit=crop",
     description: "Vibrant coral blush for a sun-kissed look",
   },
-  // Jewellery
+  {
+    id: "m9",
+    name: "Dewy Foundation - Hydrating",
+    category: "makeup",
+    type: "foundation",
+    price: 2800,
+    image: "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=400&h=400&fit=crop",
+    description: "Hydrating dewy finish for dry skin",
+  },
+  {
+    id: "m10",
+    name: "Loose Setting Powder",
+    category: "makeup",
+    type: "face-powder",
+    price: 1300,
+    image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop",
+    description: "Finely milled loose powder for a soft focus look",
+  },
+  // Jewellery – 10 products
   {
     id: "j1",
     name: "Gold Plated Bracelet Set",
@@ -117,7 +139,7 @@ export const products: Product[] = [
     category: "jewellery",
     type: "bracelet",
     price: 5500,
-    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&h=400&fit=crop",
     description: "Stylish multi-layered charm bracelet",
   },
   {
@@ -126,7 +148,7 @@ export const products: Product[] = [
     category: "jewellery",
     type: "necklace",
     price: 3800,
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
     description: "Contemporary choker necklace with geometric design",
   },
   {
@@ -135,7 +157,7 @@ export const products: Product[] = [
     category: "jewellery",
     type: "ring",
     price: 6800,
-    image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
     description: "Antique-style gold ring with intricate details",
   },
   {
@@ -144,7 +166,7 @@ export const products: Product[] = [
     category: "jewellery",
     type: "earring",
     price: 2800,
-    image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop",
     description: "Classic gold hoop earrings, perfect for everyday wear",
   },
   {
@@ -153,7 +175,7 @@ export const products: Product[] = [
     category: "jewellery",
     type: "bracelet",
     price: 2200,
-    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
     description: "Colorful beaded bracelet with bohemian style",
   },
   {
@@ -162,10 +184,10 @@ export const products: Product[] = [
     category: "jewellery",
     type: "necklace",
     price: 7200,
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
     description: "Elegant layered necklace set for a statement look",
   },
-  // Hair Accessories
+  // Hair Accessories – 10 products
   {
     id: "h1",
     name: "Silk Hair Band - Floral",
@@ -190,7 +212,7 @@ export const products: Product[] = [
     category: "hair-accessories",
     type: "clip",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=400&h=400&fit=crop",
     description: "Beautiful decorative hair clips in various designs",
   },
   {
@@ -208,7 +230,7 @@ export const products: Product[] = [
     category: "hair-accessories",
     type: "hair-catcher",
     price: 500,
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
     description: "Prevents hair from clogging your drain",
   },
   {
@@ -235,7 +257,7 @@ export const products: Product[] = [
     category: "hair-accessories",
     type: "pony",
     price: 1100,
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=400&h=400&fit=crop",
     description: "Set of 6 colorful scrunchies in various colors",
   },
   {
@@ -244,7 +266,7 @@ export const products: Product[] = [
     category: "hair-accessories",
     type: "clip",
     price: 1800,
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=400&h=400&fit=crop",
     description: "Luxurious crystal hair clips for special occasions",
   },
   {
@@ -256,23 +278,4 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop",
     description: "Classic ribbon hair bow in multiple color options",
   },
-  {
-    id: "h11",
-    name: "Hair Net - Invisible",
-    category: "hair-accessories",
-    type: "hair-catcher",
-    price: 350,
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop",
-    description: "Invisible hair net for professional styling",
-  },
-  {
-    id: "h12",
-    name: "Decorative Hair Pins - Pearl",
-    category: "hair-accessories",
-    type: "pin",
-    price: 1300,
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=400&fit=crop",
-    description: "Elegant pearl hair pins for an updo",
-  },
 ];
-

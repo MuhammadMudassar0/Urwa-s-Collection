@@ -25,7 +25,7 @@ const CheckoutPage: FC = () => {
 
   const accountDetails = {
     bankName: "Bank Name",
-    accountTitle: "Urwah Trends",
+    accountTitle: "Urwa's Collection",
     accountNumber: "1234567890123456",
     iban: "PK00ABCD1234567890123456",
     branchCode: "1234",
@@ -55,7 +55,7 @@ const CheckoutPage: FC = () => {
               <Link href="/" className="flex items-center gap-2">
                 <Sparkles className="h-8 w-8 text-primary" />
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                  Urwah Trends
+                  Urwa's Collection
                 </h1>
               </Link>
             </div>
@@ -88,7 +88,7 @@ const CheckoutPage: FC = () => {
             <Link href="/" className="flex items-center gap-2">
               <Sparkles className="h-8 w-8 text-primary" />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                Urwah Trends
+                Urwa's Collection
               </h1>
             </Link>
           </div>

@@ -51,7 +51,7 @@ const HomePage: FC = () => {
             <Link href="/" className="flex items-center gap-2">
               <Sparkles className="h-8 w-8 text-primary" />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                Urwah Trends
+                Urwa's Collection
               </h1>
             </Link>
             <div className="flex items-center gap-4">
@@ -69,12 +69,6 @@ const HomePage: FC = () => {
                   </span>
                 )}
                 <span className="hidden sm:inline">Cart</span>
-              </Link>
-              <Link
-                href="/admin"
-                className="px-4 py-2 rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors text-sm"
-              >
-                Admin
               </Link>
             </div>
           </div>
@@ -159,7 +153,7 @@ const HomePage: FC = () => {
       <footer className="border-t bg-card mt-16">
         <div className="container mx-auto px-4 py-6">
           <p className="text-center text-sm text-muted-foreground">
-            © 2024 Urwah Trends. All rights reserved.
+            © 2024 Urwa's Collection. All rights reserved.
           </p>
         </div>
       </footer>

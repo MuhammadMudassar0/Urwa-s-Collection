@@ -1,9 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
 import { Product, ProductCategory, ProductType } from "@/types/product";
-import { productsService } from "@/services/products-service";
+import { products } from "@/constants/products";
 
 interface UseProductsFilterReturn {
   filteredProducts: Product[];
@@ -26,17 +25,6 @@ export const useProductsFilter = (): UseProductsFilterReturn => {
   >("all");
   const [selectedType, setSelectedType] = useState<ProductType | "all">("all");
   const [priceRange, setPriceRange] = useState({ min: 0, max: 50000 });
-
-  const {
-    data: products = [],
-    isLoading,
-    error,
-  } = useQuery({
-    queryKey: ["products"],
-    queryFn: () => productsService.getAll(),
-    // Fallback to local products if API fails
-    retry: 1,
-  });
 
   const filteredProducts = useMemo(() => {
     let filtered = [...products];
@@ -71,7 +59,7 @@ export const useProductsFilter = (): UseProductsFilterReturn => {
     );
 
     return filtered;
-  }, [products, searchQuery, selectedCategory, selectedType, priceRange]);
+  }, [searchQuery, selectedCategory, selectedType, priceRange]);
 
   return {
     filteredProducts,
@@ -83,8 +71,8 @@ export const useProductsFilter = (): UseProductsFilterReturn => {
     setSelectedCategory,
     setSelectedType,
     setPriceRange,
-    isLoading,
-    error: error as Error | null,
+    isLoading: false,
+    error: null,
   };
 };
 

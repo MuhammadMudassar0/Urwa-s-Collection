@@ -6,7 +6,7 @@ import { ReactQueryProvider } from "@/lib/react-query-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Urwah Trends - Your Beauty & Fashion Destination",
+  title: "Urwa's Collection - Your Beauty & Fashion Destination",
   description: "Discover premium makeup, jewellery, and hair accessories",
 };
 
